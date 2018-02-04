@@ -2,7 +2,14 @@
 Raspberry Pi synthesizer
 
 # Installation
-Drop `start_synth.sh` into /etc/rc.local for it to run on startup (on a Raspberry Pi)
+
+## Headless Mode and Auto-run
+1. For headless auto-login: Enter the command `sudo raspi-config`. Scroll down to `Boot Options` and select `Console Autologin`. Then exit the configuration menu and reboot. ([source](https://raspberrypi.stackexchange.com/questions/48241/auto-login-in-jessie-how))
+2. Add script to `.bashrc`:
+```
+echo '# Run pi-synth synthesizer' >> ~/.bashrc 
+echo 'bash /home/pi/pi-synth/start_synth.sh' >> ~/.bashrc 
+```
 
 # Useful snippets
 ```sh
@@ -25,4 +32,3 @@ kill {PID}
 
 - [Save an existing Raspberry Pi SD card image](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/)
 
-- For headless auto-login: Enter the command `sudo raspi-config`. Scroll down to `Boot Options` and select `Console Autologin`. Then exit the configuration menu and reboot. ([source](https://raspberrypi.stackexchange.com/questions/48241/auto-login-in-jessie-how))
