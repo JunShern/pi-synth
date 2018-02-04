@@ -18,3 +18,9 @@ aseqdump -p {in} # For debugging (should print message events to console)
 ps -a
 kill {PID}
 ```
+
+# Useful links
+
+- [Boot into read-only mode to prevent SD corruption](https://learn.adafruit.com/read-only-raspberry-pi/)
+
+- [Save an existing Raspberry Pi SD card image](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/)
