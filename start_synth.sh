@@ -19,7 +19,7 @@
 # Run fluidsynth, but this time as a non-interactive server
 while true; do
   # Start fluidsynth
-  if (fluidsynth -is -o audio.alsa.device=hw:1 --audio-driver=alsa --gain 3 /usr/share/sounds/sf2/FluidR3_GM.sf2 &); then
+  if (fluidsynth -is -o audio.alsa.device=hw:0 --audio-driver=alsa --gain 3 /usr/share/sounds/sf2/FluidR3_GM.sf2 &); then
     break;
   fi;
     sleep 2;
