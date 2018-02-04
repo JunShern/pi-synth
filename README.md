@@ -30,5 +30,12 @@ kill {PID}
 
 - [Boot into read-only mode to prevent SD corruption](https://learn.adafruit.com/read-only-raspberry-pi/)
 
+For example, boot read-only mode with options:
+```
+GPIO for r/w jumper: 21
+GPIO for halt button: 20
+NO watchdog
+```
+
 - [Save an existing Raspberry Pi SD card image](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/)
 
