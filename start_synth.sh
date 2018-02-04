@@ -17,7 +17,13 @@
 ##############################################################################
 
 # Run fluidsynth, but this time as a non-interactive server
-fluidsynth -is -o audio.alsa.device=hw:1 --audio-driver=alsa --gain 3 /usr/share/sounds/sf2/FluidR3_GM.sf2 & # Start fluidsynth
+while true; do
+  # Start fluidsynth
+  if (fluidsynth -is -o audio.alsa.device=hw:1 --audio-driver=alsa --gain 3 /usr/share/sounds/sf2/FluidR3_GM.sf2 &); then
+    break;
+  fi;
+    sleep 2;
+done
 
 # connect the controller to fluidsynth
 while true; do if [[ $(aconnect -o ) = *FLUID* ]]; then break; fi; sleep 2; done
