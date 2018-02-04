@@ -24,3 +24,5 @@ kill {PID}
 - [Boot into read-only mode to prevent SD corruption](https://learn.adafruit.com/read-only-raspberry-pi/)
 
 - [Save an existing Raspberry Pi SD card image](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/)
+
+- For headless auto-login: Enter the command `sudo raspi-config`. Scroll down to `Boot Options` and select `Console Autologin`. Then exit the configuration menu and reboot. ([source](https://raspberrypi.stackexchange.com/questions/48241/auto-login-in-jessie-how))
