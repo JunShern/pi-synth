@@ -32,4 +32,4 @@ while true; do if [[ $(aconnect -o ) = *FLUID* ]]; then break; fi; sleep 2; done
 aconnect 'Keystation 61' 128
 
 # Give fluidsynth a nice high priority so it gets as much CPU as possible!
-sudo renice -n -18 -u pi
+#sudo renice -n -18 -u pi
