@@ -44,6 +44,6 @@ NO watchdog
 
 - [Save an existing Raspberry Pi SD card image](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/)
 
-- For headless auto-login: Enter the command `sudo raspi-config`. Scroll down to `Boot Options` and select `Console Autologin`. Then exit the configuration menu and reboot. ([source](https://raspberrypi.stackexchange.com/questions/48241/auto-login-in-jessie-how))
+- [Headless auto-login](https://raspberrypi.stackexchange.com/questions/48241/auto-login-in-jessie-how): Enter the command `sudo raspi-config`. Scroll down to `Boot Options` and select `Console Autologin`. Then exit the configuration menu and reboot
 
 - [Command-line options for raspi-config](https://raspberrypi.stackexchange.com/questions/28907/how-could-one-automate-the-raspbian-raspi-config-setup)
