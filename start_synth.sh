@@ -21,6 +21,8 @@ while true; do
   # Start fluidsynth
   if (fluidsynth -is -o audio.alsa.device=hw:0 --audio-driver=alsa --gain 3 /usr/share/sounds/sf2/FluidR3_GM.sf2 &); then
     break;
+  elif (fluidsynth -is --audio-driver=alsa --gain 3 /usr/share/sounds/sf2/FluidR3_GM.sf2 &); then
+    break;
   fi;
     sleep 2;
 done
@@ -28,8 +30,8 @@ done
 # connect the controller to fluidsynth
 while true; do if [[ $(aconnect -o ) = *FLUID* ]]; then break; fi; sleep 2; done
 
-# Don't forget to replace these with the client numbers!
-aconnect 'Keystation 61' 128
+# Use names instead of client numbers, in case client numbers change
+aconnect 'Keystation 61' 'FLUID'
 
 # Give fluidsynth a nice high priority so it gets as much CPU as possible!
 #sudo renice -n -18 -u pi
