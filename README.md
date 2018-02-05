@@ -38,7 +38,7 @@ kill {PID}
 For example, boot read-only mode with options:
 ```
 GPIO for r/w jumper: 21
-GPIO for halt button: 20
+GPIO for halt button: 16
 NO watchdog
 ```
 
