@@ -1,7 +1,7 @@
 # pi-synth
 Raspberry Pi synthesizer
 
-# Installation
+## Installation
 
 1. Clone this repository to the home directory (~) with:
 ```
@@ -16,7 +16,7 @@ sudo bash ~/pi-synth/install.sh
 sudo reboot
 ```
 
-# Useful snippets
+## Useful snippets
 ```sh
 ## Basic test with ALSA and Fluidsynth
 aplay -l # List soundcards, take note of 'card {cardnum}' for USB audio interface
@@ -31,7 +31,7 @@ ps -a
 kill {PID}
 ```
 
-# Useful links
+## Useful links
 
 - [Boot into read-only mode to prevent SD corruption](https://learn.adafruit.com/read-only-raspberry-pi/)
 
